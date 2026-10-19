@@ -1,0 +1,38 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+	keymap {
+		compatible = "zmk,keymap";
+
+		default_layer {
+			bindings = <
+				&kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
+				&kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P
+				&kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &mo 1
+				&kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp SLASH
+				&mt LSHFT SPACE
+			>;
+		};
+
+		lower_layer {
+			bindings = <
+				&kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10
+				&kp GRAVE &kp UP &kp LC(X) &kp LC(C) &kp LC(V) &kp HOME &kp PG_UP &kp LEFT &kp RIGHT &kp PLUS
+				&kp LEFT &kp DOWN &kp RIGHT &kp LSHFT &kp LCTRL &kp RCTRL &kp END &kp PG_DN &kp SEMI &mo 2
+				&kp ESC &kp TAB &kp LC(Z) &kp LC(V) &kp LC(A) &kp N1 &kp N2 &kp N3 &kp MINUS &kp BSLH
+				&kp LSHFT
+			>;
+		};
+
+		raise_layer {
+			bindings = <
+				&kp F11 &kp F12 &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT &kp CARET &kp AMPS &kp ASTRK
+				&kp TILDE &kp LBKT &kp LBRC &kp LPAR &kp LT &kp GT &kp RPAR &kp RBRC &kp RBKT &kp EQUAL
+				&trans &trans &trans &trans &trans &trans &trans &trans &kp SQT &trans
+				&trans &trans &trans &trans &trans &trans &trans &kp UNDER &kp COLON &kp PIPE
+				&trans
+			>;
+		};
+	};
+};

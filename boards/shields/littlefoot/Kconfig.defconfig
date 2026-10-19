@@ -1,0 +1,6 @@
+if SHIELD_LITTLEFOOT
+
+config ZMK_KEYBOARD_NAME
+	default "Little Foot"
+
+endif

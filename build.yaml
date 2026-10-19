@@ -1,0 +1,4 @@
+include:
+  - board: nice_nano//zmk
+    shield: littlefoot
+    artifact-name: littlefoot-nice_nano_v2-zmk
